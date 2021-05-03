@@ -1,0 +1,27 @@
+@font-face{
+  font-family: 'Mulish';
+  src: url('../fonts/mulish.ttf') format('truetype');
+}
+@font-face{
+  font-family: 'Mulish';
+  src: url('../fonts/poppins.ttf') format('truetype');
+}
+/* @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700&display=swap'); */            
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;500;600;700;900&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,500;0,700;1,400&display=swap'); */
+/* @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700&display=swap'); */ 
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities{
+  @responsive{
+    .bg-inherit{
+      background-color: inherit;
+    }
+  }
+}
+/* .hero.caption a:nth-child(3) {
+  border-right: 2px solid #ffa928cc;
+  margin-right: 0;
+} */

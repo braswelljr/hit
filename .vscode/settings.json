@@ -1,0 +1,52 @@
+// {
+//   "editor.codeActionsOnSave": {
+//     "source.fixAll.eslint": true,
+//     "source.fixAll.markdownlint": true,
+//   },
+//   "eslint.validate": [
+//     "javascript",
+//     "typescript",
+//     "html",
+//     "vue",
+//     "javascriptreact",
+//     "typescriptreact"
+//   ],
+//   "emmet.includeLanguages": {
+//     "javascript": "javascriptreact",
+//     "typescript": "typescriptreact"
+//   },
+//   "diffEditor.wordWrap": "on",
+//   "editor.autoClosingQuotes": "always",
+//   // "tailwindCSS.experimental.classRegex": [
+//   //     "tw`([^`]*)", // tw`...`
+//   //     "tw=\"([^\"]*)", // <div tw="..." />
+//   //     "tw={\"([^\"}]*)", // <div tw={"..."} />
+//   //     "tw\\.\\w+`([^`]*)", // tw.xxx`...`
+//   //     "tw\\(.*?\\)`([^`]*)" // tw(Component)`...`
+//   // ],
+//   "tailwindCSS.includeLanguages": {
+//     "typescript": "javascript",
+//     "typescriptreact": "javascript",
+//     "plaintext": "html",
+//     "javascript": "javascript",
+//     "javascriptreact": "javascriptreact"
+//   }
+// }
+{
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true,
+    "source.fixAll.markdownlint": true
+  },
+  "eslint.validate": [
+    "javascript",
+    "typescript",
+    "html",
+    "vue",
+    "javascriptreact",
+    "typescriptreact"
+  ],
+  "emmet.includeLanguages": {
+    "javascript": "javascriptreact",
+    "typescript": "typescriptreact"
+  },
+}
