@@ -4,6 +4,7 @@ import { BsFillPlayFill } from "react-icons/bs";
 import { HiX } from "react-icons/hi";
 import Programs from "../components/sections/Programs";
 import Modal from "../components/sections/Modal";
+import GetStarted from "../components/sections/GetStarted";
 
 const Academics = () => {
   const [openFrame, setOpenFrame] = useState(false);
@@ -106,6 +107,9 @@ const Academics = () => {
       <div className="py-8 bg-gray-100">
         <Programs />
       </div>
+
+      {/* Get Started */}
+      <GetStarted />
     </>
   );
 };

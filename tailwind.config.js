@@ -37,20 +37,6 @@ module.exports = {
           "100%": {
             opacity: "1"
           }
-        },
-        carousel: {
-          "0%": {
-            opacity: "0",
-            transform: "translateX(-100vw)"
-          },
-          "50%": {
-            opacity: "0.5",
-            transform: "translateX(-50vw)"
-          },
-          "100%": {
-            opacity: "1",
-            transform: "translateX(100vw)"
-          }
         }
       }
     }

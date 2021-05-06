@@ -2,6 +2,7 @@ import React from "react";
 import { LightBulbIcon, TrendingUpIcon, PresentationChartLineIcon } from "@heroicons/react/solid";
 import learnSkill from "../assets/images/learn3.png";
 import Programs from "../components/sections/Programs";
+import GetStarted from "../components/sections/GetStarted";
 
 const Index = () => {
   const mantra = [
@@ -44,14 +45,11 @@ const Index = () => {
         <div className="flex items-center justify-center text-3xl font-bold md:text-5xl">
           <h1 className="block mx-auto">Our mantra</h1>
         </div>
-        <div className="flex flex-wrap items-center justify-center space-y-12 md:space-y-0">
+        <div className="flex flex-col items-start justify-around space-y-12 md:flex-row md:space-y-0">
           {mantra.map((mant, i) => (
-            <div
-              key={i}
-              className="flex flex-col items-center justify-center w-3/5 mx-auto space-y-4 md:w-3/12"
-            >
+            <div key={i} className="flex flex-col justify-center w-3/5 mx-auto space-y-4 md:w-3/12">
               <div className="inline-flex justify-center px-auto">{mant.icon}</div>
-              <h4 className={`text-2xl md:text-3xl font-bold`}>{mant.topic}</h4>
+              <h4 className={`text-2xl md:text-3xl font-bold text-center`}>{mant.topic}</h4>
               <p className={`text-center`}>{mant.body}</p>
             </div>
           ))}
@@ -126,30 +124,7 @@ const Index = () => {
       </section>
 
       {/* Get started today */}
-      <section className="px-8 py-10 space-y-10 sm:px-12 lg:px-16 xl:px-28">
-        <div className="flex items-center justify-center text-3xl font-bold md:text-5xl">
-          <h1 className="block mx-auto">Get started today</h1>
-        </div>
-        <div className="flex items-center justify-center text-2xl font-medium leading-8 text-secondary">
-          Join our international community of Innovators.
-        </div>
-        <form action="#" method="POST" className="w-full space-y-5">
-          <input
-            type="text"
-            name="email"
-            placeholder="Enter your email"
-            id="email-input"
-            autoComplete="off"
-            className="flex w-full px-4 py-2 mx-auto text-lg placeholder-gray-300 transition-colors border rounded-lg focus:border-primary sm:w-3/4 md:w-3/5 lg:w-1/2 focus:outline-none"
-          />
-          <button
-            type="submit"
-            className="block px-12 py-3 mx-auto text-lg uppercase border-0 rounded-lg bg-primary text-gray-50 active:bg-primary focus:outline-none"
-          >
-            Sign up
-          </button>
-        </form>
-      </section>
+      <GetStarted />
     </>
   );
 };

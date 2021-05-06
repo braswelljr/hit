@@ -21,11 +21,11 @@ const Navbar = () => {
     {
       path: `/about`,
       name: `About`
-    },
-    {
-      path: `/news`,
-      name: `News`
     }
+    // {
+    //   path: `/news`,
+    //   name: `News`
+    // }
   ];
 
   useEffect(() => {
@@ -128,7 +128,7 @@ const Navbar = () => {
           {pages.map(page => (
             <NavLink
               key={page.name.toString()}
-              path={page.path}
+              href={page.path}
               nameComponent={page.name.toUpperCase()}
               setOpen={setOpen}
             />
