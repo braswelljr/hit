@@ -9,9 +9,11 @@ const NavLink = ({ href, nameComponent, setOpen }) => {
     <Link href={href}>
       <div
         className={`cursor-pointer px-3 py-1 ${
-          router.pathname == href ? `text-primary` : `text-current`
-        } md:text-current  text-xl md:text-lg font-semibold`}
-        onClick={() => {
+          router.asPath === `${href}` ? `text-primary` : `text-current`
+        }  text-xl md:text-lg font-semibold`}
+        onClick={e => {
+          e.preventDefault();
+          router.push(href);
           setOpen(false);
         }}
       >

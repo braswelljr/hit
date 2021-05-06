@@ -3,6 +3,7 @@ import { LightBulbIcon, TrendingUpIcon, PresentationChartLineIcon } from "@heroi
 import learnSkill from "../assets/images/learn3.png";
 import Programs from "../components/sections/Programs";
 import GetStarted from "../components/sections/GetStarted";
+import { programs } from "../components/data/programs";
 
 const Index = () => {
   const mantra = [
@@ -90,7 +91,7 @@ const Index = () => {
       </section>
 
       {/* our programs */}
-      <Programs />
+      <Programs content={programs} />
 
       {/* Hive News */}
       <section className="px-8 py-10 space-y-10 bg-gray-100 sm:px-12 lg:px-16 xl:px-28">

@@ -1,8 +1,8 @@
 import React from "react";
-import hitb from "../assets/logos/HITB.png";
-import coreV from "../assets/images/df.png";
-import inlinepartners from "../assets/logos/inline-partners.png";
-import nab from "../assets/logos/nab.png";
+import hitb from "../../assets/logos/HITB.png";
+import coreV from "../../assets/images/df.png";
+import inlinepartners from "../../assets/logos/inline-partners.png";
+import nab from "../../assets/logos/nab.png";
 
 const About = () => {
   const members = [

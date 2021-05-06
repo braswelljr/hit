@@ -1,10 +1,11 @@
 import { useState } from "react";
-import hexa from "../assets/logos/hexa.svg";
+import hexa from "../../assets/logos/hexa.svg";
 import { BsFillPlayFill } from "react-icons/bs";
 import { HiX } from "react-icons/hi";
-import Programs from "../components/sections/Programs";
-import Modal from "../components/sections/Modal";
-import GetStarted from "../components/sections/GetStarted";
+import Programs from "../../components/sections/Programs";
+import Modal from "../../components/sections/Modal";
+import GetStarted from "../../components/sections/GetStarted";
+import { programs } from "../../components/data/programs";
 
 const Academics = () => {
   const [openFrame, setOpenFrame] = useState(false);
@@ -79,7 +80,7 @@ const Academics = () => {
       </section>
 
       {/* Course Info */}
-      <section className="px-8 py-12 bg-gray-100 sm:px-12 lg:px-16 xl:px-36">
+      <section className="px-8 py-20 bg-gray-100 sm:px-12 lg:px-16 xl:px-36">
         <div className="flex flex-col items-center justify-around space-y-10 md:space-y-0 md:flex-row">
           <div className="flex flex-col items-center justify-center space-y-2">
             <h3 className="font-bold tracking-wide">Total Students</h3>
@@ -105,7 +106,7 @@ const Academics = () => {
 
       {/* Programs */}
       <div className="py-8 bg-gray-100">
-        <Programs />
+        <Programs content={programs} />
       </div>
 
       {/* Get Started */}
