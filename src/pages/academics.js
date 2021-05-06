@@ -1,19 +1,15 @@
 import { useState } from "react";
-import Header from "../../components/Header";
-import hexa from "../../assets/logos/hexa.svg";
+import hexa from "../assets/logos/hexa.svg";
 import { BsFillPlayFill } from "react-icons/bs";
 import { HiX } from "react-icons/hi";
-import Programs from "../../components/sections/Programs";
-import Modal from "../../components/sections/Modal";
+import Programs from "../components/sections/Programs";
+import Modal from "../components/sections/Modal";
 
 const Academics = () => {
   const [openFrame, setOpenFrame] = useState(false);
 
   return (
-    <div className="space-y-20">
-      {/* Header */}
-      <Header slideN={2} />
-
+    <>
       {/* Get your certification */}
       <section id="learn-skill-container" className="px-8 sm:px-12 lg:px-16 xl:px-36">
         <section className="w-full max-w-[1500px] mx-auto">
@@ -46,7 +42,7 @@ const Academics = () => {
                 </p>
                 <a
                   className="inline-block px-12 py-3 mx-auto text-lg uppercase transition-transform transform border-0 rounded-lg text-primary focus:outline-none"
-                  style={{ boxShadow: `-2px 17px 32px 1.40058px rgb(0 0 0 / 25%)` }}
+                  style={{ boxShadow: `-0.5px 7.5px 7.5px 0.01px rgb(0 0 0 / 25%)` }}
                   href="#"
                 >
                   KNOW MORE
@@ -82,7 +78,7 @@ const Academics = () => {
       </section>
 
       {/* Course Info */}
-      <section className="px-8 py-12 bg-gray-200 sm:px-12 lg:px-16 xl:px-36">
+      <section className="px-8 py-12 bg-gray-100 sm:px-12 lg:px-16 xl:px-36">
         <div className="flex flex-col items-center justify-around space-y-10 md:space-y-0 md:flex-row">
           <div className="flex flex-col items-center justify-center space-y-2">
             <h3 className="font-bold tracking-wide">Total Students</h3>
@@ -107,10 +103,10 @@ const Academics = () => {
       <Modal />
 
       {/* Programs */}
-      <div className="py-12 bg-gray-200">
+      <div className="py-8 bg-gray-100">
         <Programs />
       </div>
-    </div>
+    </>
   );
 };
 

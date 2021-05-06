@@ -1,8 +1,11 @@
 import "../styles/index.css";
+import "react-responsive-carousel/lib/styles/carousel.min.css";
 import Head from "next/head";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import Messanger from "../components/Messanger";
+import Header from "../components/Header";
+import News from "../pages/news";
 
 const App = ({ Component, pageProps }) => {
   return (
@@ -27,7 +30,10 @@ const App = ({ Component, pageProps }) => {
       <main className="text-gray-700">
         <Navbar />
         <div className="pt-[4.9rem]">
-          <Component {...pageProps} />
+          <div className="space-y-16">
+            {Component === News ? undefined : <Header />}
+            <Component {...pageProps} />
+          </div>
         </div>
         <Footer />
         <Messanger />

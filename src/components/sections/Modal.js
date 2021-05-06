@@ -22,6 +22,22 @@ const Modal = () => {
       role: `Junior Frontend Developer`
     }
   ];
+  function pushNext() {
+    let l = person;
+    if (l == persons.length - 1) {
+      l = -1;
+    }
+    l = l + 1;
+    setPerson(l);
+  }
+  function pushPrevious() {
+    let l = person;
+    if (l < 1) {
+      l = persons.length;
+    }
+    l = l - 1;
+    setPerson(l);
+  }
 
   return (
     <section className="px-8 py-12 sm:px-12 lg:px-16 xl:px-36">
@@ -60,28 +76,14 @@ const Modal = () => {
                 <button
                   type="button"
                   className="absolute left-0 p-2 border rounded-full shadow-md focus:outline-none hover:bg-secondary hover:text-white"
-                  onClick={() => {
-                    let l = person;
-                    if (l < 1) {
-                      l = persons.length;
-                    }
-                    l = l - 1;
-                    setPerson(l);
-                  }}
+                  onClick={() => pushPrevious()}
                 >
                   <HiChevronLeft className="w-auto h-10 text-current" />
                 </button>
                 <button
                   type="button"
                   className="absolute right-0 p-2 border rounded-full shadow-md focus:outline-none hover:bg-secondary hover:text-white"
-                  onClick={() => {
-                    let l = person;
-                    if (l == persons.length - 1) {
-                      l = -1;
-                    }
-                    l = l + 1;
-                    setPerson(l);
-                  }}
+                  onClick={() => pushNext()}
                 >
                   <HiChevronRight className="w-auto h-10 text-current" />
                 </button>

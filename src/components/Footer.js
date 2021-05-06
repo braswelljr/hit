@@ -54,14 +54,14 @@ const Footer = () => {
             </div>
             <div className="text-left">
               <h3 className="text-xl font-medium uppercase">Location</h3>
-              <a href="#" className="block mt-1 text-base italic font-medium text-footer-text">
+              <h3 href="#" className="block mt-1 text-base italic font-medium text-footer-text">
                 Kentinkron Hs 49
-              </a>
+              </h3>
             </div>
           </div>
         </div>
       </div>
-      <div className="py-3 text-2xl text-center text-white bg-gray-800">
+      <div className="py-3 text-base text-center text-white bg-gray-800 lg:text-xl">
         Copyright reserved for KUMASI HIVE © 2021
       </div>
     </>

@@ -15,12 +15,16 @@ const Navbar = () => {
       name: `Home`
     },
     {
-      path: `/views/academics`,
+      path: `/academics`,
       name: `Academics`
     },
     {
-      path: `/views/about`,
+      path: `/about`,
       name: `About`
+    },
+    {
+      path: `/news`,
+      name: `News`
     }
   ];
 
@@ -60,7 +64,7 @@ const Navbar = () => {
   return (
     <nav
       id="navbar"
-      className={`fixed inset-x-0 top-0 z-20 flex shadow-xl items-center bg-white justify-between px-8 py-4 md:px-12 xl:px-28 lg:px-20`}
+      className={`fixed inset-x-0 top-0 z-20 flex items-center bg-white justify-between px-8 py-4 md:px-12 xl:px-28 lg:px-20`}
     >
       <Link href={`/`}>
         <img src={Brand} id="brand" alt="Brand logo" className="block w-auto h-10 cursor-pointer" />
@@ -106,18 +110,18 @@ const Navbar = () => {
           tabIndex={-1}
           className={`${
             open !== true ? `hidden` : `fixed`
-          } inset-0 z-[19] bg-gray-800 w-full block h-full bg-opacity-30`}
+          } inset-0 z-[19] bg-gray-800 w-full block md:hidden h-full bg-opacity-30`}
           onClick={() => (open === true ? setOpen(false) : setOpen(false))}
         ></button>
         <div
           id="menu-list"
-          className={`fixed z-20 transform transition-all md:transition-none pb-20 md:pb-0 duration-300 ease-in md:translate-x-0 md:translate-y-0 inset-x-0 w-full h-[70vh] space-x-0 md:space-x-3 md:h-auto bg-secondary bg-opacity-80 md:bg-white text-white md:text-lg md:text-[#4a4a4a] top-0 flex items-center flex-col md:flex-row pt-28 md:pt-0 space-y-10 md:space-y-0 md:justify-between md:relative ${
+          className={`fixed z-20 transform transition-all md:transition-none pb-20 md:pb-0 duration-300 ease-in md:translate-x-0 md:translate-y-0 inset-x-0 w-full h-[80vh] space-x-0 md:space-x-3 md:h-auto bg-secondary bg-opacity-90 md:bg-white text-white md:text-lg md:text-[#4a4a4a] top-0 flex items-center flex-col md:flex-row pt-28 md:pt-0 space-y-10 md:space-y-0 md:justify-between md:relative ${
             open === false ? `opacity-0` : `opacity-100`
           } md:opacity-100 pointer-events-auto`}
           style={{
-            clipPath: `${open === false ? `circle(50vw at 90% -10%)` : `circle(75vh at 90% -10%)`}`,
+            clipPath: `${open === false ? `circle(70vw at 90% -10%)` : `circle(90vh at 75% -25%)`}`,
             WebkitClipPath: `${
-              open === false ? `circle(40vw at 90% -10%)` : `circle(75vh at 90% -10%)`
+              open === false ? `circle(70vw at 90% -10%)` : `circle(90vh at 75% -25%)`
             }`
           }}
         >
