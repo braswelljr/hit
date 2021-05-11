@@ -29,7 +29,7 @@ const Header = () => {
   return (
     <>
       <Carousel
-        interval={3000}
+        interval={10000}
         autoPlay={true}
         emulateTouch={true}
         infiniteLoop={true}
@@ -62,11 +62,11 @@ const Header = () => {
 
       {/* Partners section */}
       <div className="relative flex items-center justify-center w-full">
-        <div className="w-[90%] flex items-center justify-between w-[90%] md:w-3/5 -mt-32 mx-auto p-5 bg-white shadow-xl rounded-xl">
-          <img src={waziimg} alt="headliner" className="w-auto h-12" />
-          <img src={cotvetimg} alt="headliner" className="w-auto h-12" />
-          <img src={khimg} alt="headliner" className="w-auto h-12" />
-          <img src={knustimg} alt="headliner" className="w-auto h-12" />
+        <div className="flex items-center justify-around w-[90%] md:w-3/5 -mt-32 mx-auto p-2 bg-white shadow-xl rounded-xl">
+          <img src={waziimg} alt="headliner" className="w-20 md:w-40" />
+          <img src={cotvetimg} alt="headliner" className="w-12" />
+          <img src={khimg} alt="headliner" className="w-20 md:w-40" />
+          <img src={knustimg} alt="headliner" className="w-12 md:w-16" />
         </div>
       </div>
     </>

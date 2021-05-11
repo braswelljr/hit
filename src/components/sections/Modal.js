@@ -6,8 +6,6 @@ import testimonial from "../../assets/logos/testimonial-bg.svg";
 import { Carousel } from "react-responsive-carousel";
 
 const Modal = () => {
-  const [person, setPerson] = useState(0);
-
   const persons = [
     {
       image: person1,
@@ -26,7 +24,7 @@ const Modal = () => {
   return (
     <section className="px-8 py-12 sm:px-12 lg:px-16 xl:px-36">
       <Carousel
-        interval={3000}
+        interval={10000}
         autoPlay={true}
         emulateTouch={true}
         infiniteLoop={true}

@@ -1,10 +1,7 @@
 import React from "react";
 import Link from "next/link";
-import { useRouter } from "next/router";
 
 const Programs = ({ content }) => {
-  const router = useRouter();
-
   return (
     <>
       <section className="px-8 space-y-10 sm:px-12 lg:px-16 xl:px-28">
@@ -18,7 +15,10 @@ const Programs = ({ content }) => {
           }}
         >
           {content.map((program, i) => (
-            <Link key={i} href={`/academics/${program.topic.replaceAll(` `, ``)}`}>
+            <Link
+              key={i}
+              href={`/academics/${encodeURIComponent(program.topic.replaceAll(` `, ``))}`}
+            >
               <div
                 className="object-cover border block hover:shadow-xl cursor-pointer relative mx-auto w-full overflow-hidden transition-all bg-center bg-no-repeat group rounded-xl min-w-[14.5rem] h-72"
                 style={{
