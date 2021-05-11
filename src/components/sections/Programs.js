@@ -15,10 +15,7 @@ const Programs = ({ content }) => {
           }}
         >
           {content.map((program, i) => (
-            <Link
-              key={i}
-              href={`/academics/${encodeURIComponent(program.topic.replaceAll(` `, ``))}`}
-            >
+            <Link key={i} href={`/academics/${encodeURIComponent(i)}`}>
               <div
                 className="object-cover border block hover:shadow-xl cursor-pointer relative mx-auto w-full overflow-hidden transition-all bg-center bg-no-repeat group rounded-xl min-w-[14.5rem] h-72"
                 style={{
@@ -44,3 +41,5 @@ const Programs = ({ content }) => {
 };
 
 export default Programs;
+
+// href={`/academics/${encodeURIComponent(program.topic.replaceAll(` `, ``))}`}
