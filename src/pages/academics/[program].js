@@ -2,7 +2,7 @@ import React from "react";
 import { programs, courses } from "../../components/data/programs";
 import GetStarted from "../../components/sections/GetStarted";
 import banner from "../../assets/images/iot-banner.png";
-import { HiAcademicCap, HiClock } from "react-icons/hi";
+import { HiAcademicCap, HiClock, HiBadgeCheck } from "react-icons/hi";
 
 export const getStaticPaths = async () => {
   // fetch programs
@@ -119,7 +119,7 @@ const Programme = ({ program, courses }) => {
                   </div>
                 </div>
                 <div className="flex justify-start space-x-5 item-start">
-                  <HiAcademicCap className="block w-auto h-10 text-primary" />
+                  <HiBadgeCheck className="block w-auto h-10 text-primary" />
                   <div className="">
                     <h3 className="text-xl font-semibold">Program Certification</h3>
                     <p className="capitalize">{program.programCertification}</p>
