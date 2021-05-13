@@ -64,7 +64,7 @@ const Programme = ({ program, courses }) => {
               <div key={i} className="space-y-2 py-7">
                 <span className="font-semibold tracking-wider text-gray-300">Module</span>
                 <h3 className="text-2xl font-semibold">{cor.topic}</h3>
-                <p className="">{cor.description}</p>
+                <p className="text-lg">{cor.description}</p>
                 <p className="font-medium text-right text-gray-300">
                   Duration : {cor.duration} hours
                 </p>
