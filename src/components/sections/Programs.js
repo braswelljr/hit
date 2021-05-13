@@ -18,7 +18,7 @@ const Programs = ({ content }) => {
             <Link
               key={i}
               href={`/academics/${encodeURIComponent(
-                program.topic.replaceAll(` `, ``).toString().toLowerCase()
+                program.topic.replace(/ /g, ``).toString().toLowerCase()
               )}`.toString()}
             >
               <div

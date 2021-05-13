@@ -12,7 +12,7 @@ export const getStaticPaths = async () => {
   // Get the paths we want to pre-render based on posts
   const paths = programs.map(program => ({
     params: {
-      program: program.topic.replaceAll(` `, ``).toString().toLowerCase()
+      program: program.topic.replace(/ /g, ``).toString().toLowerCase()
     }
   }));
 
@@ -27,12 +27,12 @@ export const getStaticProps = async context => {
 
   //fetch item from programs
   const program = programs.find(
-    program => program.topic.replaceAll(` `, ``).toString().toLowerCase() === context.params.program
+    program => program.topic.replace(/ /g, ``).toString().toLowerCase() === context.params.program
   );
 
   // fetch courses
   const course = courses.filter(
-    program => program.course.replaceAll(` `, ``).toString().toLowerCase() == context.params.program
+    program => program.course.replace(/ /g, ``).toString().toLowerCase() == context.params.program
   );
 
   return {
@@ -127,13 +127,13 @@ const Programme = ({ program, courses }) => {
                 </div>
               </div>
 
-              <div className="mt-8 pl-8">
-              <button
-                type="submit"
-                className="block px-12 py-3 text-lg uppercase border-0 rounded-lg bg-primary text-gray-50 active:bg-primary focus:outline-none"
-              >
-                Enroll
-              </button>
+              <div className="pl-8 mt-8">
+                <button
+                  type="submit"
+                  className="block px-12 py-3 text-lg uppercase border-0 rounded-lg bg-primary text-gray-50 active:bg-primary focus:outline-none"
+                >
+                  Enroll
+                </button>
               </div>
             </div>
           </div>
