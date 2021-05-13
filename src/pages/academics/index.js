@@ -1,4 +1,5 @@
 import { useState } from "react";
+import Header from "../../components/Header";
 import hexa from "../../assets/logos/hexa.svg";
 import { BsFillPlayFill } from "react-icons/bs";
 import { HiX } from "react-icons/hi";
@@ -11,7 +12,10 @@ const Academics = () => {
   const [openFrame, setOpenFrame] = useState(false);
 
   return (
-    <>
+    <div className="space-y-16">
+      {/* Header */}
+      <Header />
+
       {/* Get your certification */}
       <section id="learn-skill-container" className="px-8 sm:px-12 lg:px-16 xl:px-36">
         <section className="w-full max-w-[1500px] mx-auto">
@@ -111,7 +115,7 @@ const Academics = () => {
 
       {/* Get Started */}
       <GetStarted />
-    </>
+    </div>
   );
 };
 

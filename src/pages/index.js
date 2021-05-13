@@ -1,4 +1,5 @@
 import React from "react";
+import Header from "../components/Header";
 import { LightBulbIcon, TrendingUpIcon, PresentationChartLineIcon } from "@heroicons/react/solid";
 import learnSkill from "../assets/images/learn3.png";
 import Programs from "../components/sections/Programs";
@@ -40,7 +41,10 @@ const Index = () => {
   ];
 
   return (
-    <>
+    <div className="space-y-16">
+      {/* Header */}
+      <Header />
+
       {/* our mantra */}
       <section className="w-full pb-6 space-y-8 text-gray-700 lg:px-16 xl:px-28">
         <div className="flex items-center justify-center text-3xl font-bold md:text-5xl">
@@ -126,7 +130,7 @@ const Index = () => {
 
       {/* Get started today */}
       <GetStarted />
-    </>
+    </div>
   );
 };
 

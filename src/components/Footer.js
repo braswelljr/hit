@@ -1,4 +1,5 @@
 import React from "react";
+import Link from "next/link";
 import HInstitute from "../assets/logos/logo-w.png";
 import { FaFacebookF, FaTwitter, FaLinkedinIn } from "react-icons/fa";
 
@@ -33,18 +34,26 @@ const Footer = () => {
             </div>
             <div className="text-left">
               <h3 className="text-xl font-medium uppercase">Programs</h3>
-              <a href="#" className="block mt-1 text-base font-medium text-footer-text">
-                IOT
-              </a>
-              <a href="#" className="block mt-1 text-base font-medium text-footer-text">
-                ICT & Programmming
-              </a>
-              <a href="#" className="block mt-1 text-base font-medium text-footer-text">
-                Digital Fabrication
-              </a>
-              <a href="#" className="block mt-1 text-base font-medium text-footer-text">
-                Digital Marketing
-              </a>
+              <Link href={`/academics/internetofthings`}>
+                <a className="block mt-1 text-base font-medium cursor-pointer text-footer-text">
+                  Internet of Things
+                </a>
+              </Link>
+              <Link href={`/academics/ict%26programming`}>
+                <a className="block mt-1 text-base font-medium cursor-pointer text-footer-text">
+                  ICT & Programmming
+                </a>
+              </Link>
+              <Link href={`/academics/digitalfabrication`}>
+                <a className="block mt-1 text-base font-medium cursor-pointer text-footer-text">
+                  Digital Fabrication
+                </a>
+              </Link>
+              <Link href={`/academics/digitalmarketing`}>
+                <a className="block mt-1 text-base font-medium cursor-pointer text-footer-text">
+                  Digital Marketing
+                </a>
+              </Link>
             </div>
             <div className="text-left">
               <h3 className="text-xl font-medium uppercase">News and Events</h3>

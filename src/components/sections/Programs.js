@@ -15,13 +15,17 @@ const Programs = ({ content }) => {
           }}
         >
           {content.map((program, i) => (
-            <Link key={i} href={`/academics/${encodeURIComponent(i)}`}>
+            <Link
+              key={i}
+              href={`/academics/${encodeURIComponent(
+                program.topic.replaceAll(` `, ``).toString().toLowerCase()
+              )}`.toString()}
+            >
               <div
                 className="object-cover border block hover:shadow-xl cursor-pointer relative mx-auto w-full overflow-hidden transition-all bg-center bg-no-repeat group rounded-xl min-w-[14.5rem] h-72"
                 style={{
                   backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${program.image})`
                 }}
-                href="#"
               >
                 <div className="absolute inset-0 z-[0] text-white group-hover:text-gray-700 group-hover:bg-yellow-50 group-hover:bg-opacity-75 h-full transition-all w-full space-y-10">
                   <h3 className="block mt-52 transform group-hover:translate-y-[-12rem] transition-all font-medium mx-4 mb-0 text-3xl">

@@ -5,6 +5,9 @@ import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import Messanger from "../components/Messanger";
 import Header from "../components/Header";
+import Academics from "../pages/academics";
+import Home from "../pages/index";
+import About from "../pages/about";
 import News from "../pages/news";
 import { useRouter } from "next/router";
 
@@ -32,10 +35,7 @@ const App = ({ Component, pageProps }) => {
       <main className="text-gray-700">
         <Navbar />
         <div className="pt-[4.9rem]">
-          <div className="space-y-16">
-            {Component === News || !router.asPath ? undefined : <Header />}
-            <Component {...pageProps} />
-          </div>
+          <Component {...pageProps} />
         </div>
         <Footer />
         <Messanger />

@@ -1,4 +1,5 @@
 import React from "react";
+import Header from "../../components/Header";
 import hitb from "../../assets/logos/HITB.png";
 import coreV from "../../assets/images/df.png";
 import inlinepartners from "../../assets/logos/inline-partners.png";
@@ -20,7 +21,9 @@ const About = () => {
     }
   ];
   return (
-    <>
+    <div className="space-y-16">
+      {/* Header */}
+      <Header />
       {/* learn a skill */}
       <section className="sm:px-12 lg:px-16 xl:px-36">
         <div className="flex flex-col items-center justify-center w-full mx-auto md:flex-row md:justify-between md:space-x-10">
@@ -117,7 +120,7 @@ const About = () => {
           <img src={inlinepartners} alt="partners" className="w-full h-auto" />
         </div>
       </section>
-    </>
+    </div>
   );
 };
 
