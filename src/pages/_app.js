@@ -4,15 +4,8 @@ import Head from "next/head";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import Messanger from "../components/Messanger";
-import Header from "../components/Header";
-import Academics from "../pages/academics";
-import Home from "../pages/index";
-import About from "../pages/about";
-import News from "../pages/news";
-import { useRouter } from "next/router";
 
 const App = ({ Component, pageProps }) => {
-  const router = useRouter();
   return (
     <>
       <Head>
