@@ -57,9 +57,9 @@ const Footer = () => {
             </div>
             <div className="text-left">
               <h3 className="text-xl font-medium uppercase">News and Events</h3>
-              <a href="#" className="block mt-1 text-base font-medium text-footer-text">
-                Workshops
-              </a>
+              <Link href={`/academics/news`}>
+                <a className="block mt-1 text-base font-medium text-footer-text">Workshops</a>
+              </Link>
             </div>
             <div className="text-left">
               <h3 className="text-xl font-medium uppercase">Location</h3>
