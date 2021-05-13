@@ -2,9 +2,8 @@ const withPWA = require("next-pwa");
 const runtimeCaching = require("next-pwa/cache");
 const withImages = require("next-images");
 
-module.exports = withPWA(
-  withImages({
-    esModule: true,
+module.exports = withImages(
+  withPWA({
     pwa: {
       dest: "public",
       runtimeCaching
