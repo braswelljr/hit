@@ -14,12 +14,7 @@ module.exports = withPlugins(
         }
       }
     ],
-    [
-      withImages,
-      {
-        esModule: true
-      }
-    ]
+    [withImages]
   ],
   {
     future: {
